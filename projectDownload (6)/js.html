@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    <footer>
+        class YearElement extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = new Date().getFullYear();
+    }
+}
+
+customElements.define("x-fullyear", YearElement);
+    </footer>
